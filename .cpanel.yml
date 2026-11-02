@@ -1,1 +1,7 @@
-
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/afsucomt/public_html/
+    - /bin/mkdir -p ${DEPLOYPATH}yonetim
+    - /bin/cp -f index.html ${DEPLOYPATH}
+    - /bin/cp -f yonetim/index.html ${DEPLOYPATH}yonetim/
